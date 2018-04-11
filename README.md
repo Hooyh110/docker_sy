@@ -1,2 +1,3 @@
 # docker_sy
-测试
+利用ansible初始化各个节点
+
