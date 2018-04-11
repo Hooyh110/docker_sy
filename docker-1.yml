@@ -1,0 +1,9 @@
+- hosts : docker
+  remote_user : root
+  tasks :
+  - name : copy
+    copy : src=disk-mount.sh dest=~/ mode=0744
+  - name : copy
+    copy : src=k8s.repo dest=/etc/yum.repos.d/
+  - name :  mount disk
+    shell: sh disk-mount.sh
